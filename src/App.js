@@ -8,7 +8,7 @@ import NavMenu from './components/NavMenu';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <NavMenu />
       <Switch>
         <Route path="/about">
