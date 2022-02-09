@@ -10,7 +10,15 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg);
+  background: linear-gradient(
+      to left,
+      var(--red-1) 0%,
+      var(--red-2) 12%,
+      var(--red-2) 47%,
+      var(--red-1) 100%
+    )
+    left bottom var(--black-op) no-repeat;
+  background-size: 100% 2px;
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -20,9 +28,9 @@ const NavStyles = styled.nav`
       display: inline-block;
       border-radius: 8px;
       transition: 0.3s ease background-color;
+      border-bottom: 1px solid transparent;
       &:hover {
-        background-color: var(--deep-dark);
-        border-bottom: 1px solid var(--gray-1);
+        border-bottom: 1px solid var(--red-2);
       }
     }
     a {
