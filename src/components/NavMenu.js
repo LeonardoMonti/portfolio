@@ -22,6 +22,7 @@ const NavStyles = styled.nav`
       transition: 0.3s ease background-color;
       &:hover {
         background-color: var(--deep-dark);
+        border-bottom: 1px solid var(--gray-1);
       }
     }
     a {
@@ -33,6 +34,7 @@ const NavStyles = styled.nav`
       outline: none;
     }
     .active {
+      text-decoration: overline var(--red-2);
       color: var(--white);
     }
   }
