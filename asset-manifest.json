@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.f5c69424.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f5c69424.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.6352af9a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6352af9a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
     "static/css/2.853ba1bc.chunk.css": "/portfolio/static/css/2.853ba1bc.chunk.css",
@@ -13,7 +13,7 @@
     "static/media/Montserrat-Bold.079ca05d.ttf": "/portfolio/static/media/Montserrat-Bold.079ca05d.ttf",
     "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/portfolio/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/portfolio/static/media/RobotoMono-Regular.418a8f9f.ttf",
-    "static/media/gifloading.8d2d8bb7.gif": "/portfolio/static/media/gifloading.8d2d8bb7.gif",
+    "static/media/gifloading.d89c36ca.gif": "/portfolio/static/media/gifloading.d89c36ca.gif",
     "static/media/github-icon.7cd4ea9f.png": "/portfolio/static/media/github-icon.7cd4ea9f.png",
     "static/media/hero.c07b0ce5.png": "/portfolio/static/media/hero.c07b0ce5.png",
     "static/media/linkedin-icon.b94cd296.png": "/portfolio/static/media/linkedin-icon.b94cd296.png",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.0bf68c44.js",
     "static/css/2.853ba1bc.chunk.css",
     "static/js/2.510a50c4.chunk.js",
-    "static/js/main.f5c69424.chunk.js"
+    "static/js/main.6352af9a.chunk.js"
   ]
 }
