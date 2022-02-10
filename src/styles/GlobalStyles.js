@@ -8,12 +8,13 @@ const GlobalStyles = createGlobalStyle`
   }
   :root{
     --black-op: rgba(9, 11, 13, 1);
+    --deep-dark-1: rgba(9,11,13,0.6);
     --gray-op: rgba(38,41,44,1);
     --background-gradient: linear-gradient(90deg, var(--black-op) 0%, var(--gray-op) 100%);
     --dark-bg: #262626;
     --gray-1: #BCB4B4;
     --deep-dark: #1E1E1E;
-    --deep-dark-1: rgba(9,11,13,0.6);
+    --green-dark: #006600;
     --gray-2: #363636;
     --gray-3: rgb(94, 93, 90, 0.75);
     --white : white;

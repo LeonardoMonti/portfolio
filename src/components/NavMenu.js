@@ -18,7 +18,7 @@ const NavStyles = styled.nav`
       var(--red-1) 100%
     )
     left bottom var(--black-op) no-repeat;
-  background-size: 100% 2px;
+  background-size: 100% 1px;
   ul {
     max-width: 1200px;
     margin: 0 auto;
