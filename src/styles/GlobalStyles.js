@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
 
   *::-webkit-scrollbar-thumb {
     box-shadow: 1px 1px 15px 15px var(--gray-2);
-    background-color: var(--black-op);
+    background-color: var(--gray-op);
     border-radius: 1px;
     border-left: 1px outset var(--red-1);
     border-top: 1px outset var(--red-1);
