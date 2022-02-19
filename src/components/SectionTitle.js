@@ -4,17 +4,23 @@ import styled from 'styled-components';
 const SectionTitleStyle = styled.div`
   text-align: center;
   p {
-    text-shadow: 1px 1px 8px var(--red-2);
+    text-shadow: 1px 1px 2px var(--gray-1);
     font-family: 'RobotoMono Regular';
     font-size: 2rem;
-    color: var(--red-2);
+    padding: 7px;
+    color: var(--white);
   }
   h2 {
+    color: var(--white);
     font-family: 'Montserrat Bold';
-    text-shadow: 1px 1px 10px var(--deep-dark-1);
-    font-size: 7rem;
+    font-size: 7.5rem;
     margin-top: 0.5rem;
     text-transform: uppercase;
+    text-shadow: 3px 3px 1px var(--gray-1);
+    transition: 0.5s;
+    :hover {
+      text-shadow: 2.5px 3px 3px var(--gray-1);
+    }
   }
   @media only screen and (max-width: 768px) {
     text-align: center;

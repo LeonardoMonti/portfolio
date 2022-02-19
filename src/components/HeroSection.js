@@ -10,6 +10,14 @@ import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
+    background-image: linear-gradient(
+      to bottom,
+      #181a1d,
+      #131c29,
+      #0d1d35,
+      #071e41,
+      #051e4c
+    );
     height: 100vh;
     min-height: 1000px;
     width: 100%;
@@ -30,19 +38,17 @@ const HeroStyles = styled.div`
     .hero__name {
       font-family: 'Montserrat SemiBold';
       font-size: 7rem;
-      text-shadow: 1px 1px 10px var(--deep-dark-1);
       color: var(--white);
     }
   }
   .hero__img {
-    max-width: 900px;
+    max-width: 880px;
     width: 100%;
-    height: 600px;
+    height: 570px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
+    border: 2px solid var(--gray-2);
   }
   .hero__info {
-    text-shadow: 1px 1px 2px black;
     margin-top: -18rem;
   }
   .hero__social,
@@ -51,7 +57,7 @@ const HeroStyles = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    bottom: 20px;
+    bottom: 65px;
     width: 50px;
   }
   .hero__social {
@@ -66,11 +72,10 @@ const HeroStyles = styled.div`
     width: 50px;
     p {
       opacity: 0.8;
-      text-shadow: 0.5px 0.5px 0.5px black;
-      color: var(--red-1);
+      color: var(--white);
       font-size: 1.8rem;
       font-weight: bold;
-      transform: translateY(-70px) rotate(90deg);
+      transform: translateY(-65px) rotate(90deg);
       letter-spacing: 0.7rem;
       text-transform: uppercase;
     }
@@ -92,17 +97,11 @@ const HeroStyles = styled.div`
       li {
         margin-bottom: 0.3rem;
         a {
-          opacity: 0.8;
+          opacity: 1;
           display: inline-block;
           font-size: 1.6rem;
           letter-spacing: 5px;
           margin-bottom: 2rem;
-          img {
-            opacity: 0.8;
-          }
-          img:hover {
-            opacity: 1;
-          }
         }
       }
     }
@@ -116,8 +115,8 @@ const HeroStyles = styled.div`
       font-size: 1.5rem;
       margin-bottom: -3rem;
       .hero__name {
-        font-size: 4rem;
-        text-shadow: 1px 1px 2px black;
+        font-size: 3.8rem;
+        text-shadow: 1px 2px 2px var(--gray-1);
         padding-bottom: 1rem;
       }
     }
@@ -125,20 +124,20 @@ const HeroStyles = styled.div`
       height: 300px;
     }
     .hero__info {
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
     .hero__social {
       left: 0px;
-      bottom: -15%;
+      bottom: -10%;
       width: 20px;
       .hero__social__indicator {
         width: 22px;
         p {
-          opacity: 0.8;
+          opacity: 0.9;
           font-size: 1.3rem;
         }
         img {
-          max-height: 35px;
+          max-height: 50px;
         }
       }
       .hero__social__icon {
@@ -146,9 +145,9 @@ const HeroStyles = styled.div`
           li {
             a {
               font-size: 1.2rem;
-              margin-bottom: 1rem;
+              margin-bottom: 0.5rem;
               img {
-                width: 2.5rem;
+                width: 2.8rem;
               }
             }
           }
@@ -179,10 +178,7 @@ export default function HeroSection() {
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <PText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </PText>
+            <PText>Desenvolvedor Front-end</PText>
             <Button btnText="Veja meus projetos" btnLink="/projects" />
           </div>
           <div className="hero__social">
