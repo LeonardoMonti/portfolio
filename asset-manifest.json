@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.6352af9a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6352af9a.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.b00cccc3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b00cccc3.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
     "static/css/2.853ba1bc.chunk.css": "/portfolio/static/css/2.853ba1bc.chunk.css",
@@ -14,16 +14,16 @@
     "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/portfolio/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/portfolio/static/media/RobotoMono-Regular.418a8f9f.ttf",
     "static/media/gifloading.d89c36ca.gif": "/portfolio/static/media/gifloading.d89c36ca.gif",
-    "static/media/github-icon.7cd4ea9f.png": "/portfolio/static/media/github-icon.7cd4ea9f.png",
+    "static/media/github-icon.b7dd10c7.png": "/portfolio/static/media/github-icon.b7dd10c7.png",
     "static/media/hero.c07b0ce5.png": "/portfolio/static/media/hero.c07b0ce5.png",
-    "static/media/linkedin-icon.b94cd296.png": "/portfolio/static/media/linkedin-icon.b94cd296.png",
-    "static/media/scroll-down-arrow.80b41ac4.svg": "/portfolio/static/media/scroll-down-arrow.80b41ac4.svg",
-    "static/media/social-media-arrow.17210586.svg": "/portfolio/static/media/social-media-arrow.17210586.svg"
+    "static/media/linkedin-icon.e5c71685.png": "/portfolio/static/media/linkedin-icon.e5c71685.png",
+    "static/media/scroll-down-arrow.67acbbbb.svg": "/portfolio/static/media/scroll-down-arrow.67acbbbb.svg",
+    "static/media/social-media-arrow.dd368afa.svg": "/portfolio/static/media/social-media-arrow.dd368afa.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0bf68c44.js",
     "static/css/2.853ba1bc.chunk.css",
     "static/js/2.510a50c4.chunk.js",
-    "static/js/main.6352af9a.chunk.js"
+    "static/js/main.b00cccc3.chunk.js"
   ]
 }
