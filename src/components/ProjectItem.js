@@ -7,20 +7,20 @@ const ProjectItemStyles = styled.div`
   .projectItem__img {
     width: 100%;
     height: 400px;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     display: inline-block;
-    border: 3px solid var(--gray-2);
+    border: 2px solid var(--blue-up2);
     img {
       height: 100%;
     }
   }
   .projectItem__info {
     margin-top: 1rem;
-    background-color: var(--deep-dark-1);
+    background-color: var(--black-op6);
     padding: 1rem;
-    border-radius: 10px;
-    border: 2px ridge var(--red-2);
+    border-radius: 8px;
+    border: 2px solid var(--blue-up2);
   }
   .projectItem__title {
     font-size: 2.2rem;
@@ -32,7 +32,7 @@ const ProjectItemStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
-      height: 350px;
+      height: 340px;
     }
   }
 `;

@@ -11,6 +11,14 @@ import projects from '../assets/data/projects';
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
+  background-image: linear-gradient(
+    to top,
+    #181a1d,
+    #131c29,
+    #0d1d35,
+    #071e41,
+    #051e4c
+  );
   padding: 10rem 0;
   .projects__allItems {
     display: flex;
@@ -18,23 +26,29 @@ const ProjectSectionStyle = styled.div`
     margin-top: 5rem;
   }
   .swiper-container {
-    padding-top: 8rem;
+    padding-top: 7rem;
     max-width: 100%;
   }
   .swiper-button-prev,
   .swiper-button-next {
-    border: 1px solid var(--red-2);
+    border: 1px solid var(--blue-up1);
     position: absolute;
     height: 50px;
     width: 50px;
-    background: var(--deep-dark);
+    background: var(--white);
+    font-weight: 700;
+    text-shadow: 1px 2px 2px var(--black-op6);
     z-index: 10;
     right: 60px;
     left: auto;
     top: 0;
     transform: translateY(50%);
-    color: var(--red-1);
+    color: var(--blue-up1);
     border-radius: 8px;
+    :active {
+      transform: translateY(52%);
+      text-shadow: 1px 1px 2px var(--black-op6);
+    }
   }
   .swiper-button-next {
     right: 0;
@@ -44,11 +58,12 @@ const ProjectSectionStyle = styled.div`
     font-size: 2rem;
   }
   @media only screen and (max-width: 768px) {
+    padding: 9rem 0;
     .projects__allItems {
       flex-direction: column;
       max-width: 400px;
       margin: 0 auto;
-      margin-top: 7rem;
+      margin-top: 0.15rem;
       gap: 5rem;
       .projectItem__img {
         width: 100%;
@@ -58,17 +73,13 @@ const ProjectSectionStyle = styled.div`
 `;
 
 export default function ProjectsSection() {
-  // console.log(projects);
   return (
     <ProjectSectionStyle>
       <div className="container">
-        <SectionTitle
-          subheading="Projetos Desenvolvidos na Trybe"
-          heading="Projetos"
-        />
+        <SectionTitle subheading="Projetos Desenvolvidos" heading="Projetos" />
         <div className="projects__allItems">
           <Swiper
-            spaceBetween={30}
+            spaceBetween={20}
             slidesPerView={1}
             navigation
             breakpoints={{

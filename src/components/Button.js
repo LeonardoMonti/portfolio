@@ -6,23 +6,24 @@ const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
     font-size: 2.2rem;
-    background-color: var(--deep-dark-1);
+    background-color: var(--black-op6);
     padding: 0.7em 2em;
-    border: 2px solid var(--red-2);
+    border: 2px solid var(--blue-up2);
     border-radius: 8px;
     text-shadow: 1px 1px 2px black;
     display: inline-block;
     color: var(--gray-1);
-    transition: all 0.7s ease-out;
+    transition: all 1s ease-out;
   }
   .button:hover {
-    color: var(--red-1);
-    border: 2px solid var(--red-1);
+    color: var(--white);
+    border: 2px solid var(--blue-up1);
+    background-color: var(--black-op8);
   }
   @media only screen and (max-width: 768px) {
     .button {
-      font-size: 1.8rem;
-      background-color: transparent;
+      font-size: 1.9rem;
+      background-color: var(--black-op8);
     }
   }
 `;

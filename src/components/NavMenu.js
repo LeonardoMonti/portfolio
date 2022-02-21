@@ -10,15 +10,23 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: linear-gradient(
-      to left,
-      var(--red-1) 0%,
-      var(--red-2) 12%,
-      var(--red-2) 47%,
-      var(--red-1) 100%
-    )
-    left bottom var(--black-op) no-repeat;
-  background-size: 100% 1px;
+  background-image: linear-gradient(
+    to left,
+    #181a1d,
+    #181a1d,
+    #181a1d,
+    #181a1d,
+    #181a1d,
+    #171b21,
+    #151b25,
+    #131c29,
+    #0e1d32,
+    #091e3b,
+    #061e44,
+    #051e4c
+  );
+  border-bottom: 1px solid var(--blue-up1);
+
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -27,11 +35,8 @@ const NavStyles = styled.nav`
     li {
       display: inline-block;
       border-radius: 8px;
-      transition: 0.3s ease background-color;
+      transition: 0.5s;
       border-bottom: 1px solid transparent;
-      &:hover {
-        border-bottom: 1px solid var(--red-2);
-      }
     }
     a {
       display: inline-block;
@@ -42,10 +47,11 @@ const NavStyles = styled.nav`
       outline: none;
     }
     .active {
-      text-decoration: overline var(--red-2);
+      text-decoration: overline var(--blue-up1);
       color: var(--white);
     }
   }
+
   .mobile-menu-icon {
     position: absolute;
     right: 1rem;
@@ -77,6 +83,8 @@ const NavStyles = styled.nav`
       width: 90%;
       max-width: 300px;
       border-radius: 12px;
+      border-left: 1px solid var(--blue-up1);
+      border-bottom: 1px solid var(--blue-up1);
       position: absolute;
       right: 1rem;
       top: var(--top);
