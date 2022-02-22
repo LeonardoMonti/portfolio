@@ -39,6 +39,7 @@ const HeroStyles = styled.div`
       font-family: 'Montserrat SemiBold';
       font-size: 7rem;
       color: var(--white);
+      text-shadow: 3px 3px 2px var(--gray-1);
     }
   }
   .hero__img {
@@ -46,7 +47,8 @@ const HeroStyles = styled.div`
     width: 100%;
     height: 570px;
     margin: 0 auto;
-    border: 2px solid var(--gray-2);
+    box-shadow: 5px 15px 20px -5px var(--black-op),
+      50px -50px 0px -30px rgba(0, 0, 0, 0);
   }
   .hero__info {
     margin-top: -18rem;

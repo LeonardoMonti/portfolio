@@ -14,12 +14,13 @@ const GlobalStyles = createGlobalStyle`
     --black-op: rgba(9, 11, 13, 1);
     --black-op8: rgba(9, 11, 13, 0.8);
     --black-op6: rgba(9, 11, 13, 0.6);
-    --gray-1: #BCB4B4;
+    --gray-1: #DBDBDB;
     --gray-2: #363636;
     --gray-3: rgba(9,11,13,0.6);
     --gray-4: rgba(9,11,13,0.8);
     --blue-up1: #0A22F5;
     --blue-up2: #112A46;
+    --blue-up3: #2C5DF2;
   }
     /* Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
