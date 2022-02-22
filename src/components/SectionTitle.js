@@ -26,6 +26,7 @@ const SectionTitleStyle = styled.div`
     }
     h2 {
       font-size: 4rem;
+      text-shadow: 2px 2px 1px var(--gray-1);
     }
   }
 `;

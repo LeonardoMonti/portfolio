@@ -118,7 +118,7 @@ const HeroStyles = styled.div`
       margin-bottom: -3rem;
       .hero__name {
         font-size: 3.8rem;
-        text-shadow: 1px 2px 2px var(--gray-1);
+        text-shadow: 2px 2px 2px var(--gray-1);
         padding-bottom: 1rem;
       }
     }
