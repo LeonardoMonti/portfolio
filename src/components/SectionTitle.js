@@ -16,11 +16,8 @@ const SectionTitleStyle = styled.div`
     font-size: 7.5rem;
     margin-top: 0.5rem;
     text-transform: uppercase;
-    text-shadow: 3px 3px 1px var(--gray-1);
+    text-shadow: 3px 3px 2px var(--gray-1);
     transition: 0.5s;
-    :hover {
-      text-shadow: 2.5px 3px 3px var(--gray-1);
-    }
   }
   @media only screen and (max-width: 768px) {
     text-align: center;
