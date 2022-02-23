@@ -26,6 +26,7 @@ const SectionTitleStyle = styled.div`
     }
     h2 {
       font-size: 4rem;
+      text-shadow: 2px 2px 1px var(--gray-1);
     }
   }
 `;
@@ -36,7 +37,7 @@ export default function SectionTitle({
 }) {
   return (
     <SectionTitleStyle className="section-title">
-      <p>{subheading}</p>
+      <p id={heading}>{subheading}</p>
       <h2>{heading}</h2>
     </SectionTitleStyle>
   );

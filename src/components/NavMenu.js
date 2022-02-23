@@ -9,7 +9,7 @@ const NavStyles = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
   background-image: linear-gradient(
     to left,
     #181a1d,
@@ -25,7 +25,7 @@ const NavStyles = styled.nav`
     #061e44,
     #051e4c
   );
-  border-bottom: 1px solid var(--blue-up1);
+  border-bottom: 2px solid var(--blue-up1);
 
   ul {
     max-width: 1200px;
@@ -67,6 +67,16 @@ const NavStyles = styled.nav`
   .navItems .closeNavIcon {
     display: none;
   }
+  .nav-handle {
+    transform: translateY(calc(-1 * var(--nav-height)));
+    li {
+      a {
+        padding: 0;
+        font-size: 0;
+      }
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     padding: 0;
     .hide-item {
@@ -107,6 +117,21 @@ const NavStyles = styled.nav`
 
 export default function NavMenu() {
   const [showNav, setShowNav] = useState(false);
+
+  let lastScrollY = window.scrollY;
+  function handleScroll() {
+    const navUl = document.querySelector('.navItems');
+    console.log(navUl);
+    if (lastScrollY < window.scrollY) {
+      navUl.classList.add('nav-handle');
+    } else {
+      navUl.classList.remove('nav-handle');
+    }
+    lastScrollY = window.scrollY;
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
   return (
     <NavStyles>
       <div
@@ -118,7 +143,6 @@ export default function NavMenu() {
       >
         <MdMenu />
       </div>
-
       <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
         <div
           className="closeNavIcon"

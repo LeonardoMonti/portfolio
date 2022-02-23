@@ -6,7 +6,7 @@ const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
     font-size: 2.2rem;
-    background-color: var(--black-op6);
+    background-color: var(--black-op8);
     padding: 0.7em 2em;
     border: 2px solid var(--blue-up2);
     border-radius: 8px;
