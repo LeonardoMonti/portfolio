@@ -21,6 +21,8 @@ const GlobalStyles = createGlobalStyle`
     --blue-up1: #0A22F5;
     --blue-up2: #112A46;
     --blue-up3: #2C5DF2;
+
+    --nav-height: 50px;
   }
     /* Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
