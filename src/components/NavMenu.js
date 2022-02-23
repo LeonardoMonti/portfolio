@@ -121,7 +121,6 @@ export default function NavMenu() {
   let lastScrollY = window.scrollY;
   function handleScroll() {
     const navUl = document.querySelector('.navItems');
-    console.log(navUl);
     if (lastScrollY < window.scrollY) {
       navUl.classList.add('nav-handle');
     } else {
