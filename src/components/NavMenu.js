@@ -9,7 +9,7 @@ const NavStyles = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.7rem 0;
+  padding: 0.3rem 0;
   background-image: linear-gradient(
     to left,
     #181a1d,
@@ -26,6 +26,15 @@ const NavStyles = styled.nav`
     #051e4c
   );
   border-bottom: 2px solid var(--blue-up1);
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   ul {
     max-width: 1200px;
@@ -68,11 +77,26 @@ const NavStyles = styled.nav`
     display: none;
   }
   .nav-handle {
+    transition-property: translateY;
+    transition-duration: 3s;
     transform: translateY(calc(-1 * var(--nav-height)));
     li {
       a {
+        transition-property: padding, font-size;
+        transition-duration: 1s, 1.9s;
         padding: 0;
         font-size: 0;
+      }
+    }
+  }
+  .nav-handle2 {
+    li {
+      a {
+        transition-property: padding, font-size, opacity;
+        transition-duration: 1s, 1.9s;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        animation: fadein 2s;
       }
     }
   }
@@ -123,7 +147,9 @@ export default function NavMenu() {
     const navUl = document.querySelector('.navItems');
     if (lastScrollY < window.scrollY) {
       navUl.classList.add('nav-handle');
+      navUl.classList.remove('nav-handle2');
     } else {
+      navUl.classList.add('nav-handle2');
       navUl.classList.remove('nav-handle');
     }
     lastScrollY = window.scrollY;
