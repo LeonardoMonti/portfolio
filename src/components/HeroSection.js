@@ -43,12 +43,12 @@ const HeroStyles = styled.div`
     }
   }
   .hero__img {
-    max-width: 880px;
+    max-width: 420px;
     width: 100%;
-    height: 570px;
+    height: 550px;
     margin: 0 auto;
-    box-shadow: 5px 15px 20px -5px var(--black-op),
-      50px -50px 0px -30px rgba(0, 0, 0, 0);
+    box-shadow: 5px 15px 25px -5px var(--black-op),
+      40px -50px 0px -30px rgba(0, 0, 0, 0);
   }
   .hero__info {
     margin-top: -18rem;
@@ -123,6 +123,7 @@ const HeroStyles = styled.div`
       }
     }
     .hero__img {
+      width: 250px;
       height: 300px;
     }
     .hero__info {
