@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.a0192354.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a0192354.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.5353ab9e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5353ab9e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
     "static/css/2.853ba1bc.chunk.css": "/portfolio/static/css/2.853ba1bc.chunk.css",
@@ -15,7 +15,7 @@
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/portfolio/static/media/RobotoMono-Regular.418a8f9f.ttf",
     "static/media/gifloading.d89c36ca.gif": "/portfolio/static/media/gifloading.d89c36ca.gif",
     "static/media/github-icon.b7dd10c7.png": "/portfolio/static/media/github-icon.b7dd10c7.png",
-    "static/media/hero.e14f483b.png": "/portfolio/static/media/hero.e14f483b.png",
+    "static/media/hero.db51f5dc.png": "/portfolio/static/media/hero.db51f5dc.png",
     "static/media/linkedin-icon.e5c71685.png": "/portfolio/static/media/linkedin-icon.e5c71685.png",
     "static/media/scroll-down-arrow.67acbbbb.svg": "/portfolio/static/media/scroll-down-arrow.67acbbbb.svg",
     "static/media/social-media-arrow.dd368afa.svg": "/portfolio/static/media/social-media-arrow.dd368afa.svg"
@@ -24,6 +24,6 @@
     "static/js/runtime-main.0bf68c44.js",
     "static/css/2.853ba1bc.chunk.css",
     "static/js/2.510a50c4.chunk.js",
-    "static/js/main.a0192354.chunk.js"
+    "static/js/main.5353ab9e.chunk.js"
   ]
 }
