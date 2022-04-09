@@ -9,6 +9,7 @@ const SectionTitleStyle = styled.div`
     font-size: 2rem;
     padding: 7px;
     color: var(--white);
+    /* transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg); */
   }
   h2 {
     color: var(--white);
@@ -17,8 +18,9 @@ const SectionTitleStyle = styled.div`
     margin-top: 0.5rem;
     text-transform: uppercase;
     text-shadow: 3px 3px 2px var(--gray-1);
-    transition: 0.5s;
+    /* transform: rotateX(0deg) rotateY(0deg) rotateZ(356deg); */
   }
+
   @media only screen and (max-width: 768px) {
     text-align: center;
     p {

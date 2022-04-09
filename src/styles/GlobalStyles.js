@@ -18,9 +18,11 @@ const GlobalStyles = createGlobalStyle`
     --gray-2: #363636;
     --gray-3: rgba(9,11,13,0.6);
     --gray-4: rgba(9,11,13,0.8);
+    --gray-5: rgba(255, 255, 255, 0.125);
     --blue-up1: #0A22F5;
     --blue-up2: #112A46;
     --blue-up3: #2C5DF2;
+    --blue-up4: rgba(17, 25, 40, 0.75);
 
     --nav-height: 50px;
   }
@@ -43,25 +45,34 @@ const GlobalStyles = createGlobalStyle`
     border-bottom: 1px outset var(--blue-up1);
   }
   
-  html{
+  html {
     font-size: 10px;
     font-family: 'Roboto Mono';
     background: linear-gradient(90deg, var(--black-op) 0%, var(--black-op2) 100%);
   }
-  ul,li{
+
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  
+  ul,li {
     list-style: none;
   }
-  a{
+
+  a {
     text-decoration: none;
   }
-  img, svg{
+
+  img, svg {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  button{
+
+  button {
     outline: none
   }
+
   .container {
     max-width: 1200px;
     width: 90%;
