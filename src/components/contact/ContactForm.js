@@ -110,7 +110,6 @@ const FormStyles = styled.div`
 `;
 
 export default function ContactForm() {
-  const [isValid, setIsValid] = useState(true);
   const formik = useFormik({
     initialValues: {
       firstName: '',
@@ -200,7 +199,7 @@ export default function ContactForm() {
             />
           </label>
 
-          <button disabled={isValid} type="submit">
+          <button type="submit">
             Enviar
             <FaAngleDoubleRight className="icon" />
           </button>
