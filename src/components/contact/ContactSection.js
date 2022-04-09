@@ -55,7 +55,7 @@ const ContactStyles = styled.div`
       min-height: 750px;
     }
     .container {
-      margin-top: 5rem;
+      margin-top: 10rem;
       justify-content: space-between;
       display: flex;
       flex-direction: column;
