@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useFormik } from 'formik';
 import styled from 'styled-components';
 import { FaAngleDoubleRight } from 'react-icons/fa';
