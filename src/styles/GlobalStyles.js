@@ -48,7 +48,17 @@ const GlobalStyles = createGlobalStyle`
   html {
     font-size: 10px;
     font-family: 'Roboto Mono';
-    background: linear-gradient(90deg, var(--black-op) 0%, var(--black-op2) 100%);
+  }
+
+  body {
+    background-image: radial-gradient(
+      circle,
+      #051e4c,
+      #071e41,
+      #0d1d35,
+      #131c29,
+      #181a1d
+    );
   }
 
   textarea:focus, input:focus{

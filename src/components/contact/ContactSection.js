@@ -7,14 +7,6 @@ import ContactInfo from './ContactInfo';
 const ContactStyles = styled.div`
   height: 100vh;
   .contact {
-    background-image: radial-gradient(
-      circle,
-      #051e4c,
-      #071e41,
-      #0d1d35,
-      #131c29,
-      #181a1d
-    );
     min-height: 1000px;
     display: flex;
     flex-direction: column;

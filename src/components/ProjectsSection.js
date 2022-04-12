@@ -11,14 +11,6 @@ import projects from '../assets/data/projects';
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
-  background-image: linear-gradient(
-    to top,
-    #181a1d,
-    #131c29,
-    #0d1d35,
-    #071e41,
-    #051e4c
-  );
   padding: 10rem 0;
   .projects__allItems {
     display: flex;

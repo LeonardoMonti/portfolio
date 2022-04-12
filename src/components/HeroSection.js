@@ -10,14 +10,6 @@ import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
-    background-image: linear-gradient(
-      to bottom,
-      #181a1d,
-      #131c29,
-      #0d1d35,
-      #071e41,
-      #051e4c
-    );
     height: 100vh;
     min-height: 1000px;
     width: 100%;
