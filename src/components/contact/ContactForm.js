@@ -110,7 +110,26 @@ const FormStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .formContain {
       width: 330px;
-      min-height: 400px;
+      min-height: 100px;
+      height: 440px;
+      form {
+        gap: 0rem;
+        label {
+          padding: 0.5rem;
+        }
+        input {
+          padding: 5px;
+          font-size: 10px;
+        }
+        .text {
+          justify-content: center;
+          padding: 0;
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .hidden {
+      display: none;
     }
   }
 `;
@@ -169,7 +188,7 @@ export default function ContactForm() {
   return (
     <FormStyles>
       <div className="formContain">
-        <h1>Envie um Email</h1>
+        <h1 className="hidden">Envie um Email</h1>
         <form ref={form} onSubmit={formik.handleSubmit}>
           <label htmlFor="user_name">
             <div className="text">
@@ -213,7 +232,7 @@ export default function ContactForm() {
 
           <label htmlFor="message">
             <div className="text">
-              <span>Message:</span>
+              <span>Envie uma mensagem:</span>
               <span>
                 {formik.touched.message && formik.errors.message ? (
                   <div>{formik.errors.message}</div>

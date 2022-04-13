@@ -9,12 +9,12 @@ const GlobalStyles = createGlobalStyle`
   :root{
     --dark-bg: #262626;
     --deep-dark: #1E1E1E;
-    --white : white;
+    --white : rgb(235,235,240);
     --black: black;
     --black-op: rgba(9, 11, 13, 1);
-    --black-op8: rgba(9, 11, 13, 0.8);
+    --black-op8: rgba(9, 11, 13, 0.9);
     --black-op6: rgba(9, 11, 13, 0.6);
-    --gray-1: #DBDBDB;
+    --gray-1: rgb(235,235,240);
     --gray-2: #363636;
     --gray-3: rgba(9,11,13,0.6);
     --gray-4: rgba(9,11,13,0.8);

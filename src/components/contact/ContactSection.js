@@ -5,7 +5,6 @@ import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
 
 const ContactStyles = styled.div`
-  height: 100vh;
   .contact {
     min-height: 1000px;
     display: flex;
@@ -47,7 +46,7 @@ const ContactStyles = styled.div`
       min-height: 750px;
     }
     .container {
-      margin-top: 10rem;
+      margin-top: 2rem;
       justify-content: space-between;
       display: flex;
       flex-direction: column;

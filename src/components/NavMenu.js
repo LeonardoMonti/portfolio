@@ -112,7 +112,7 @@ const NavStyles = styled.nav`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: var(--black-op);
       padding: 2rem;
       width: 90%;
       max-width: 300px;

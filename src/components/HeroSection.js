@@ -10,19 +10,17 @@ import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
-    height: 100vh;
     min-height: 1000px;
+    height: 100vh;
     width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
   }
   .hero__heading {
     font-size: 2rem;
     margin-bottom: -4rem;
-    position: relative;
     span {
       display: inline-block;
       width: 100%;
@@ -35,13 +33,13 @@ const HeroStyles = styled.div`
     }
   }
   .hero__img {
-    max-width: 420px;
+    max-width: 370px;
     width: 100%;
     height: 550px;
     margin: 0 auto;
   }
   .hero__info {
-    margin-top: -18rem;
+    margin-top: -3.3rem;
   }
   .hero__social,
   .hero__scrollDown {
@@ -98,49 +96,50 @@ const HeroStyles = styled.div`
       }
     }
   }
-
+  @media only screen and (max-width: 1024px) {
+  }
   @media only screen and (max-width: 768px) {
     .hero {
-      min-height: 750px;
+      min-height: 630px;
     }
     .hero__heading {
       font-size: 1.5rem;
-      margin-bottom: -3rem;
+      margin-bottom: -4rem;
       .hero__name {
-        font-size: 3.8rem;
+        font-size: 3.7rem;
         text-shadow: 2px 2px 2px var(--gray-1);
         padding-bottom: 1rem;
       }
     }
     .hero__img {
-      width: 250px;
-      height: 300px;
+      width: 200px;
+      height: 320px;
     }
     .hero__info {
-      margin-top: 2rem;
+      margin-top: 0.2rem;
     }
     .hero__social {
       left: 0px;
-      bottom: -10%;
+      bottom: -1%;
       width: 20px;
       .hero__social__indicator {
-        width: 22px;
+        width: 27px;
         p {
           opacity: 0.9;
-          font-size: 1.3rem;
+          font-size: 1.6rem;
         }
         img {
-          max-height: 50px;
+          max-height: 40px;
         }
       }
       .hero__social__icon {
         ul {
           li {
             a {
-              font-size: 1.2rem;
+              font-size: 1rem;
               margin-bottom: 0.5rem;
               img {
-                width: 2.8rem;
+                width: 3.9rem;
               }
             }
           }
@@ -150,9 +149,9 @@ const HeroStyles = styled.div`
     .hero__scrollDown {
       right: 0;
       width: 20px;
-      gap: 1rem;
+      gap: 2rem;
       p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
     }
   }

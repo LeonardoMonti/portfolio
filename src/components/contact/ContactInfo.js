@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  FaWhatsapp,
-  FaEnvelope,
-  FaSearchLocation,
-  FaLinkedin,
-} from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import styled from 'styled-components';
 import Info from './Info';
 
@@ -26,10 +21,12 @@ const FormStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .infoContain {
-      width: 330px;
-      min-height: 220px;
-      height: 260px;
-      justify-content: start;
+      width: 300px;
+      flex-direction: row;
+      min-height: 10px;
+      height: 50px;
+      justify-content: center;
+      gap: 0.6rem;
     }
   }
 `;
@@ -45,9 +42,9 @@ export default function ContactForm() {
         />
         <Info icon={<FaEnvelope />} content="contatoleomonti@gmail.com" />
         <Info
-          icon={<FaSearchLocation />}
-          content="Pedralva - Sul de minas"
-          direct="https://goo.gl/maps/j1iSnZCEDawfXw4r9"
+          icon={<FaGithub />}
+          content="Github"
+          direct="https://github.com/LeonardoMonti"
         />
         <Info
           icon={<FaLinkedin />}

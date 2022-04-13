@@ -4,10 +4,14 @@ import styled from 'styled-components';
 const PStyle = styled.div`
   max-width: 500px;
   margin: 0 auto;
-  font-size: 1.8rem;
-  line-height: 1.3em;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  border-bottom: 2px ridge var(--blue-up1);
+  text-shadow: 2px 5px 10px var(--black-op);
+  z-index: 5;
   @media only screen and (max-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 2rem;
+    line-height: 5rem;
   }
 `;
 

@@ -18,15 +18,23 @@ const InfoStyles = styled.div`
   }
 
   @media only screen and (max-width: 1024px) {
-    padding: 8px;
+    padding: 5px;
     a {
       width: 30px;
     }
   }
 
   @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    padding: 1px;
+    gap: 0.1rem;
     a {
-      width: 30px;
+      width: 40px;
+    }
+    .hidden {
+      display: none;
     }
   }
 `;
@@ -37,7 +45,7 @@ export default function Info({ icon, content, direct }) {
       <a href={direct} target="_blank" rel="noreferrer">
         {icon}
       </a>
-      <h3>{content}</h3>
+      <h3 className="hidden">{content}</h3>
     </InfoStyles>
   );
 }
