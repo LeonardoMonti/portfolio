@@ -75,6 +75,7 @@ const FormStyles = styled.div`
     button {
       display: flex;
       color: var(--black-op8);
+      cursor: pointer;
       border-radius: 4px;
       padding: 1rem;
       text-align: center;
