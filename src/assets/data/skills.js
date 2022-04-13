@@ -10,12 +10,15 @@ import nodeJsIMG from '../images/skills/nodeJsIMG.png';
 import prismaIMG from '../images/skills/prismaIMG.png';
 import mysqlIMG from '../images/skills/mysqlIMG.png';
 import githubIMG from '../images/skills/githubIMG.png';
+import htmlIMG from '../images/skills/htmlIMG.png';
+import cssIMG from '../images/skills/cssIMG.png';
+import javascriptIMG from '../images/skills/javascriptIMG.png';
 
 const skills = [
   {
     id: 1,
-    name: 'MongoDB',
-    img: mongoDbIMG,
+    name: 'JavaScript',
+    img: javascriptIMG,
   },
   {
     id: 2,
@@ -72,16 +75,21 @@ const skills = [
     name: 'Git hub',
     img: githubIMG,
   },
-  // {
-  //   id: 13,
-  //   name: 'Projeto 13',
-  //   img: mongoDbIMG,
-  // },
-  // {
-  //   id: 14,
-  //   name: 'Projeto 14',
-  //   img: mongoDbIMG,
-  // },
+  {
+    id: 13,
+    name: 'HTML 5',
+    img: htmlIMG,
+  },
+  {
+    id: 14,
+    name: 'CSS 3',
+    img: cssIMG,
+  },
+  {
+    id: 15,
+    name: 'MongoDB',
+    img: mongoDbIMG,
+  },
 ];
 
 export default skills;
