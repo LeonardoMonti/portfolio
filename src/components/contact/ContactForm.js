@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { useFormik } from 'formik';
+import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
-import { FaAngleDoubleRight } from 'react-icons/fa';
+import { FaAngleDoubleRight, FaCheckCircle } from 'react-icons/fa';
 import * as Yup from 'yup';
+import toggleElement from '../../utils/toggle';
+
+const {
+  REACT_APP_YOUR_SERVICE_ID,
+  REACT_APP_YOUR_TEMPLATE_ID,
+  REACT_APP_YOUR_PUBLIC_KEY,
+} = process.env;
 
 const FormStyles = styled.div`
   .formContain {
@@ -70,14 +78,11 @@ const FormStyles = styled.div`
       border-radius: 4px;
       padding: 1rem;
       text-align: center;
-      border: none;
+      border: 1px solid var(--blue-up2);
       font-weight: bold;
       font-size: 1.8rem;
       .icon {
         fill: var(--black-op8);
-      }
-      &:disabled {
-        fill: red;
       }
     }
   }
@@ -110,71 +115,98 @@ const FormStyles = styled.div`
 `;
 
 export default function ContactForm() {
+  const [sent, setSent] = useState(false);
+  const form = useRef();
+
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        REACT_APP_YOUR_SERVICE_ID,
+        REACT_APP_YOUR_TEMPLATE_ID,
+        form.current,
+        REACT_APP_YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const formik = useFormik({
     initialValues: {
-      firstName: '',
-      email: '',
+      user_name: '',
+      user_email: '',
       message: '',
     },
     validationSchema: Yup.object({
-      firstName: Yup.string()
+      user_name: Yup.string()
         .max(15, 'Must be 15 characters or less')
         .required('Required'),
       message: Yup.string()
         .max(150, 'Must be 150 characters or less')
         .required('Required'),
-      email: Yup.string().email('Invalid email address').required('Required'),
+      user_email: Yup.string()
+        .email('Invalid user_email address')
+        .required('Required'),
     }),
     onSubmit: (values, { setSubmitting, resetForm }) => {
-      alert(JSON.stringify(values, null, 2));
+      if (values) {
+        sendEmail();
+        setSent(true);
+      }
       setTimeout(() => {
         resetForm();
         setSubmitting(false);
       }, 1000);
     },
   });
+
   return (
     <FormStyles>
       <div className="formContain">
         <h1>Envie um Email</h1>
-        <form onSubmit={formik.handleSubmit}>
-          <label htmlFor="firstName">
+        <form ref={form} onSubmit={formik.handleSubmit}>
+          <label htmlFor="user_name">
             <div className="text">
               <span>Nome:</span>
               <span>
-                {formik.touched.firstName && formik.errors.firstName ? (
-                  <div>{formik.errors.firstName}</div>
+                {formik.touched.user_name && formik.errors.user_name ? (
+                  <div>{formik.errors.user_name}</div>
                 ) : null}
               </span>
             </div>
             <input
-              id="firstName"
-              name="firstName"
+              id="user_name"
+              name="user_name"
               type="text"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.firstName}
+              value={formik.values.user_name}
               placeholder="Informe seu nome"
             />
           </label>
 
-          <label htmlFor="email">
+          <label htmlFor="user_email">
             <div className="text">
               <span>Email:</span>
               <span>
-                {formik.touched.email && formik.errors.email ? (
-                  <div>{formik.errors.email}</div>
+                {formik.touched.user_email && formik.errors.user_email ? (
+                  <div>{formik.errors.user_email}</div>
                 ) : null}
               </span>
             </div>
             <input
-              id="email"
-              name="email"
+              id="user_email"
+              name="user_email"
               type="email"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.email}
-              placeholder="Informe seu email"
+              value={formik.values.user_email}
+              placeholder="Informe seu user_email"
             />
           </label>
 
@@ -199,9 +231,13 @@ export default function ContactForm() {
             />
           </label>
 
-          <button type="submit">
-            Enviar
-            <FaAngleDoubleRight className="icon" />
+          <button type="submit" value="Send">
+            {toggleElement(sent, 'Enviado', 'Enviar')}
+            {toggleElement(
+              sent,
+              <FaCheckCircle className="icon" />,
+              <FaAngleDoubleRight className="icon" />
+            )}
           </button>
         </form>
       </div>
