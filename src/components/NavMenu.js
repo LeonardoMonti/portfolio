@@ -112,7 +112,14 @@ const NavStyles = styled.nav`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--black-op);
+      background-image: linear-gradient(
+        to left bottom,
+        #051e4c,
+        #071e41,
+        #0d1d35,
+        #131c29,
+        #181a1d
+      );
       padding: 2rem;
       width: 90%;
       max-width: 300px;

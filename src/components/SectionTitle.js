@@ -14,7 +14,7 @@ const SectionTitleStyle = styled.div`
   h2 {
     color: var(--white);
     font-family: 'Montserrat Bold';
-    font-size: 7.5rem;
+    font-size: 7.2rem;
     margin-top: 0.5rem;
     text-transform: uppercase;
     text-shadow: 3px 3px 2px var(--gray-1);
