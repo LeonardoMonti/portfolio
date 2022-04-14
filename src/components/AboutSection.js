@@ -26,6 +26,7 @@ const AboutSectionStyle = styled.div`
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1px;
+    text-shadow: 2px 5px 10px var(--black-op);
   }
 
   @media only screen and (max-width: 768px) {
@@ -34,6 +35,7 @@ const AboutSectionStyle = styled.div`
     }
     .description {
       letter-spacing: 0.3px;
+      text-shadow: 1px 1px 5px var(--black-op);
     }
   }
 `;

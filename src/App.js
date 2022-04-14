@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import NavMenu from './components/NavMenu';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

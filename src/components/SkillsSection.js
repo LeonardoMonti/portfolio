@@ -20,8 +20,11 @@ const SkillsSectionStyle = styled.div`
   .titleSection {
     font-size: 2.6rem;
     text-align: center;
+    text-shadow: 2px 5px 10px var(--black-op);
   }
+
   .swiper-container {
+    padding: 2rem;
     width: 70%;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -37,17 +40,15 @@ const SkillsSectionStyle = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    img {
-      width: 101px;
-    }
   }
 
   .imageSkill {
-    width: 100px;
+    width: 95px;
   }
 
   .nameSkill {
     text-align: center;
+    min-width: 150px;
     font-size: 1.2rem;
     padding-bottom: 1px;
   }
