@@ -4,12 +4,10 @@ import styled from 'styled-components';
 const SectionTitleStyle = styled.div`
   text-align: center;
   p {
-    text-shadow: 1px 1px 2px var(--gray-1);
     font-family: 'RobotoMono Regular';
     font-size: 2rem;
     padding: 7px;
     color: var(--white);
-    /* transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg); */
   }
   h2 {
     color: var(--white);
@@ -17,8 +15,6 @@ const SectionTitleStyle = styled.div`
     font-size: 7.2rem;
     margin-top: 0.5rem;
     text-transform: uppercase;
-    text-shadow: 3px 3px 2px var(--gray-1);
-    /* transform: rotateX(0deg) rotateY(0deg) rotateZ(356deg); */
   }
 
   @media only screen and (max-width: 768px) {
@@ -28,7 +24,6 @@ const SectionTitleStyle = styled.div`
     }
     h2 {
       font-size: 4rem;
-      text-shadow: 2px 2px 1px var(--gray-1);
     }
   }
 `;

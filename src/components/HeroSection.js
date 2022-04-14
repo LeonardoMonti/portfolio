@@ -10,7 +10,7 @@ import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
-    min-height: 1000px;
+    min-height: 800px;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -29,13 +29,12 @@ const HeroStyles = styled.div`
       font-family: 'Montserrat SemiBold';
       font-size: 7rem;
       color: var(--white);
-      text-shadow: 3px 3px 2px var(--gray-1);
     }
   }
   .hero__img {
     max-width: 370px;
     width: 100%;
-    height: 550px;
+    height: 520px;
     margin: 0 auto;
   }
   .hero__info {
@@ -47,13 +46,14 @@ const HeroStyles = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    bottom: 65px;
     width: 50px;
   }
   .hero__social {
+    top: 75vh;
     left: 50px;
   }
   .hero__scrollDown {
+    top: 75vh;
     right: 50px;
   }
 
@@ -96,7 +96,10 @@ const HeroStyles = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1440px) {
+    .hero__social {
+      top: 70vh;
+    }
   }
   @media only screen and (max-width: 768px) {
     .hero {
@@ -107,39 +110,38 @@ const HeroStyles = styled.div`
       margin-bottom: -4rem;
       .hero__name {
         font-size: 3.7rem;
-        text-shadow: 2px 2px 2px var(--gray-1);
         padding-bottom: 1rem;
       }
     }
     .hero__img {
-      width: 200px;
-      height: 320px;
+      width: 230px;
+      height: 375px;
     }
     .hero__info {
-      margin-top: 0.2rem;
+      margin-top: -5rem;
     }
     .hero__social {
-      left: 0px;
-      bottom: -1%;
+      left: 7px;
+      top: 40vh;
       width: 20px;
       .hero__social__indicator {
-        width: 27px;
+        width: 33px;
         p {
           opacity: 0.9;
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
         img {
-          max-height: 40px;
+          max-height: 45px;
         }
       }
       .hero__social__icon {
         ul {
           li {
             a {
-              font-size: 1rem;
+              font-size: 0.5rem;
               margin-bottom: 0.5rem;
               img {
-                width: 3.9rem;
+                width: 3.5rem;
               }
             }
           }
@@ -147,11 +149,12 @@ const HeroStyles = styled.div`
       }
     }
     .hero__scrollDown {
-      right: 0;
+      right: 4px;
       width: 20px;
+      bottom: 20px;
       gap: 2rem;
       p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
     }
   }

@@ -1,18 +1,18 @@
-import mongoDbIMG from '../images/skills/mongoDbIMG.png';
-import sequelizeIMG from '../images/skills/sequelizeIMG.png';
-import dockerIMG from '../images/skills/dockerIMG.png';
+import javascriptIMG from '../images/skills/javascriptIMG.png';
+import htmlIMG from '../images/skills/htmlIMG.png';
+import cssIMG from '../images/skills/cssIMG.png';
 import typeScriptIMG from '../images/skills/typeScriptIMG.png';
 import styledCompIMG from '../images/skills/styledCompIMG.png';
+import reactIMG from '../images/skills/reactIMG.png';
 import reduxIMG from '../images/skills/reduxIMG.png';
 import jestIMG from '../images/skills/jestIMG.png';
-import reactIMG from '../images/skills/reactIMG.png';
 import nodeJsIMG from '../images/skills/nodeJsIMG.png';
 import prismaIMG from '../images/skills/prismaIMG.png';
 import mysqlIMG from '../images/skills/mysqlIMG.png';
+import sequelizeIMG from '../images/skills/sequelizeIMG.png';
+import dockerIMG from '../images/skills/dockerIMG.png';
+import mongoDbIMG from '../images/skills/mongoDbIMG.png';
 import githubIMG from '../images/skills/githubIMG.png';
-import htmlIMG from '../images/skills/htmlIMG.png';
-import cssIMG from '../images/skills/cssIMG.png';
-import javascriptIMG from '../images/skills/javascriptIMG.png';
 
 const skills = [
   {
@@ -22,38 +22,38 @@ const skills = [
   },
   {
     id: 2,
-    name: 'Sequelize',
-    img: sequelizeIMG,
+    name: 'HTML',
+    img: htmlIMG,
   },
   {
     id: 3,
-    name: 'Docker',
-    img: dockerIMG,
+    name: 'CSS 3',
+    img: cssIMG,
   },
   {
     id: 4,
-    name: 'Styled Component',
-    img: styledCompIMG,
-  },
-  {
-    id: 5,
     name: 'TypeScript',
     img: typeScriptIMG,
   },
   {
+    id: 5,
+    name: 'Styled Component',
+    img: styledCompIMG,
+  },
+  {
     id: 6,
+    name: 'React',
+    img: reactIMG,
+  },
+  {
+    id: 7,
     name: 'Redux',
     img: reduxIMG,
   },
   {
-    id: 7,
+    id: 8,
     name: 'Jest',
     img: jestIMG,
-  },
-  {
-    id: 8,
-    name: 'React',
-    img: reactIMG,
   },
   {
     id: 9,
@@ -72,23 +72,23 @@ const skills = [
   },
   {
     id: 12,
-    name: 'Git hub',
-    img: githubIMG,
+    name: 'Sequelize',
+    img: sequelizeIMG,
   },
   {
     id: 13,
-    name: 'HTML 5',
-    img: htmlIMG,
+    name: 'Docker',
+    img: dockerIMG,
   },
   {
     id: 14,
-    name: 'CSS 3',
-    img: cssIMG,
+    name: 'MongoDB',
+    img: mongoDbIMG,
   },
   {
     id: 15,
-    name: 'MongoDB',
-    img: mongoDbIMG,
+    name: 'Github',
+    img: githubIMG,
   },
 ];
 

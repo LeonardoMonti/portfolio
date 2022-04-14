@@ -19,6 +19,7 @@ const SkillsSectionStyle = styled.div`
 
   .titleSection {
     font-size: 2.6rem;
+    text-align: center;
   }
   .swiper-container {
     width: 70%;
@@ -53,6 +54,17 @@ const SkillsSectionStyle = styled.div`
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .swiper-container {
+      width: 90%;
+    }
+    .containerSlide {
+      img {
+        width: 80px;
+      }
+    }
   }
 `;
 

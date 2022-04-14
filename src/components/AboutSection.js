@@ -5,7 +5,11 @@ import SectionTitle from './SectionTitle';
 
 const AboutSectionStyle = styled.div`
   padding: 3rem 0;
-  height: 800px;
+  min-height: 800px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .about__all {
     display: flex;
     gap: 3rem;

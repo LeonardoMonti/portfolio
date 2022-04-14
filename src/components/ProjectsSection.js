@@ -10,7 +10,12 @@ import projects from '../assets/data/projects';
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
-  height: 800px;
+  padding: 3rem 0;
+  min-height: 800px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .projects__allItems {
     display: flex;
     gap: 3rem;

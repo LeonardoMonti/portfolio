@@ -59,6 +59,9 @@ const GlobalStyles = createGlobalStyle`
       #131c29,
       #181a1d
     );
+    max-width: 1440px;
+    position: relative;
+    margin: auto;
   }
 
   textarea:focus, input:focus{
