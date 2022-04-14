@@ -7,7 +7,7 @@ const FooterStyles = styled.div`
   text-align: center;
   display: flex;
   align-items: center;
-  background: var(--test);
+  background: var(--black-2);
   border: 1px solid var(--blue-up2);
   border-radius: 8px 8px 0px 0px;
   justify-content: center;

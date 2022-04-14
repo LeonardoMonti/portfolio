@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
     --blue-up2: #112A46;
     --blue-up3: #2C5DF2;
     --blue-up4: rgba(17, 25, 40, 0.75);
-    --test: #161B22;
+    --black-2: #161B22;
 
     --nav-height: 50px;
   }
