@@ -206,7 +206,6 @@ export default function ContactForm() {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.user_name}
-              placeholder="Informe seu nome"
             />
           </label>
 
@@ -226,7 +225,6 @@ export default function ContactForm() {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.user_email}
-              placeholder="Informe seu user_email"
             />
           </label>
 
@@ -247,7 +245,7 @@ export default function ContactForm() {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.message}
-              placeholder="text.."
+              placeholder="\..."
             />
           </label>
 
