@@ -6,7 +6,6 @@ const PStyle = styled.div`
   margin: 0 auto;
   font-size: 2.5rem;
   line-height: 3.2rem;
-  border-bottom: 2px ridge var(--blue-up1);
   text-shadow: 2px 5px 10px var(--black-op);
   z-index: 5;
   @media only screen and (max-width: 768px) {

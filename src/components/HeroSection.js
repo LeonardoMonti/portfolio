@@ -36,9 +36,10 @@ const HeroStyles = styled.div`
     width: 100%;
     height: 520px;
     margin: 0 auto;
+    border-bottom: 1px solid var(--blue-up3);
   }
   .hero__info {
-    margin-top: -3.3rem;
+    padding-top: 10px;
   }
   .hero__social,
   .hero__scrollDown {
@@ -96,11 +97,13 @@ const HeroStyles = styled.div`
       }
     }
   }
+
   @media only screen and (max-width: 1440px) {
     .hero__social {
       top: 70vh;
     }
   }
+
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 630px;
@@ -114,11 +117,11 @@ const HeroStyles = styled.div`
       }
     }
     .hero__img {
-      width: 230px;
+      width: 260px;
       height: 375px;
     }
     .hero__info {
-      margin-top: -5rem;
+      padding-top: 3px;
     }
     .hero__social {
       left: 7px;
