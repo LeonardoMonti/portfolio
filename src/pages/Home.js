@@ -1,13 +1,13 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import ProjectsSection from '../components/ProjectsSection';
-import SkillsSection from '../components/SkillsSection';
+import AboutSection from '../components/AboutSection';
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <SkillsSection />
+      <AboutSection />
       <ProjectsSection />
     </>
   );

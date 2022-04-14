@@ -10,7 +10,7 @@ import projects from '../assets/data/projects';
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
-  padding: 10rem 0;
+  height: 800px;
   .projects__allItems {
     display: flex;
     gap: 3rem;
