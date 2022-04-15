@@ -6,12 +6,12 @@ import SectionTitle from './SectionTitle';
 const AboutSectionStyle = styled.div`
   padding: 3rem 0;
   min-height: 800px;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   .about__all {
     display: flex;
+    align-items: center;
     gap: 3rem;
     margin-top: 5rem;
     flex-direction: column;
