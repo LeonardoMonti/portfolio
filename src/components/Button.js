@@ -2,36 +2,49 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const ButtonStyle = styled.div`
+const ButtonStyle = styled.button`
   margin-top: 2rem;
+  width: 300px;
+  background-color: var(--blue-up4);
+  border: 2px solid var(--blue-up2);
+  height: 70px;
+  border-radius: 8px;
   .button {
-    font-size: 2.2rem;
-    background-color: var(--black-op8);
-    padding: 0.7em 2em;
-    border: 2px solid var(--blue-up2);
-    border-radius: 8px;
+    align-items: center;
+    font-size: 2rem;
     text-shadow: 1px 1px 2px black;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     color: var(--gray-1);
     transition: all 1s ease-out;
   }
+  .icon {
+    width: 65%;
+  }
   .button:hover {
+    font-size: 2.05rem;
     color: var(--white);
-    border: 2px solid var(--blue-up1);
-    background-color: var(--black-op8);
+    border: 2px solid var(--blue-up4);
   }
   @media only screen and (max-width: 768px) {
     .button {
       font-size: 1.9rem;
-      background-color: var(--black-op8);
+    }
+    .button:hover {
+      font-size: 1.65rem;
     }
   }
 `;
 
-export default function Button({ btnText = 'test', btnLink = 'test' }) {
+export default function Button({
+  btnText = 'test',
+  icon = 'icon',
+  btnLink = 'test',
+}) {
   return (
     <ButtonStyle className="button-wrapper">
       <Link className="button" to={btnLink}>
+        <a className="icon">{icon}</a>
         {btnText}
       </Link>
     </ButtonStyle>

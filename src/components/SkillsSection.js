@@ -78,17 +78,17 @@ export default function SkillsSection() {
           autoplay={{ delay: 2000 }}
           speed={1000}
           spaceBetween={30}
-          slidesPerView={2}
+          slidesPerView={3}
           allowTouchMove
           loop
           breakpoints={{
             // quando a largura da janela é >= 640px
             640: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             },
             // quando a largura da janela é >= 768px
             768: {
-              slidesPerView: 4,
+              slidesPerView: 5,
             },
             // quando a largura da janela é >= 1200px
             1200: {

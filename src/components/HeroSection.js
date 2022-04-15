@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaArrowRight } from 'react-icons/fa';
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -40,6 +41,9 @@ const HeroStyles = styled.div`
   }
   .hero__info {
     padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .hero__social,
   .hero__scrollDown {
@@ -48,6 +52,10 @@ const HeroStyles = styled.div`
     gap: 2rem;
     position: absolute;
     width: 50px;
+  }
+  .icon {
+    max-width: 60px;
+    display: flex;
   }
   .hero__social {
     top: 75vh;
@@ -130,6 +138,10 @@ const HeroStyles = styled.div`
     .hero__info {
       padding-top: 3px;
     }
+    .icon {
+      max-width: 40px;
+      display: flex;
+    }
     .hero__social {
       left: 7px;
       top: 40vh;
@@ -173,7 +185,7 @@ const HeroStyles = styled.div`
 export default function HeroSection() {
   return (
     <HeroStyles>
-      <div className="hero">
+      <div id="home" className="hero">
         <div className="container">
           <h1 className="hero__heading">
             <span>Olá sou</span>
@@ -184,7 +196,11 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>Desenvolvedor Front-end</PText>
-            <Button btnText="Veja meus projetos" btnLink="/projects" />
+            <Button
+              btnText="Veja meus projetos"
+              icon={<FaArrowRight className="icon" />}
+              btnLink="/projects"
+            />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">

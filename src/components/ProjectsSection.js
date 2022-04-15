@@ -70,9 +70,9 @@ const ProjectSectionStyle = styled.div`
 
 export default function ProjectsSection() {
   return (
-    <ProjectSectionStyle>
+    <ProjectSectionStyle id="projects">
       <div className="container">
-        <SectionTitle subheading="Projetos Desenvolvidos" heading="Projetos" />
+        <SectionTitle subheading="" heading="Projetos" />
         <div className="projects__allItems">
           <Swiper
             spaceBetween={20}
