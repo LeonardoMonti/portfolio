@@ -1,87 +1,115 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaDownload, FaReply } from 'react-icons/fa';
-import PText from './PText';
-import Button from './Button';
-import ExampleDoc from '../assets/images/gifloading.gif';
+import { FaDownload, FaGithub } from 'react-icons/fa';
+// import ExampleDoc from '../assets/images/gifloading.gif';
 
-const FooterStyles = styled.div`
-  min-height: 300px;
-  width: 100%;
+const FooterStyles = styled.footer`
   display: flex;
+  min-height: 280px;
+  width: 100%;
   background: var(--black-2);
   border: 2px solid var(--blue-up2);
   border-radius: 8px 8px 0px 0px;
-  justify-content: space-around;
-  .container {
+  border-bottom: none;
+  justify-content: space-between;
+  margin-top: 100spx;
+  .section__footer {
     display: flex;
-    justify-content: space-around;
-  }
-  .icon {
-    max-width: 50px;
-    display: flex;
-  }
-  .sectionEstrutura {
-    display: flex;
-    width: 40%;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
     align-items: center;
-    align-content: center;
-  }
-  .sectionEstrutura2 {
-    width: 600px;
+    width: 30%;
   }
   .section__pages {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: column;
     align-items: center;
+    width: 100%;
+    font-size: 2.2rem;
     li {
+      padding-left: 8vh;
       text-align: start;
-      width: 65%;
-      display: flex;
+      line-height: 1.7;
       a {
-        font-size: 2.2rem;
+        transition: all 0.3s ease-in;
         &:hover {
-          text-decoration: line-through;
+          text-shadow: 2px 2px 30px var(--blue-up1);
         }
       }
     }
   }
-  @media only screen and (max-width: 768px) {
+  .section__footer_middle {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     font-size: 2rem;
-    line-height: 5rem;
+    text-shadow: 2px 2px 40px var(--blue-up1);
+    .link {
+      .icon {
+        width: 30px;
+      }
+    }
+  }
+  .downloadCV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    width: 230px;
+    gap: 1rem;
+    text-shadow: 1px 1px 2px black;
+    color: var(--gray-1);
+    background-color: var(--blue-up4);
+    border: 2px solid var(--blue-up2);
+    height: 60px;
+    border-radius: 8px;
+    &:hover {
+      text-shadow: 1px 1px 2px black;
+      opacity: 0.9;
+    }
+    .icon {
+      width: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .section__pages {
+      font-size: 1.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
     flex-direction: column;
-    .sectionEstrutura {
+    justify-content: space-evenly;
+    height: 400px;
+    padding-bottom: 8px;
+    .section__footer {
+      width: 100%;
+    }
+    .section__pages {
       align-items: center;
       width: 100%;
-      padding-bottom: 10px;
-      p {
-        display: none;
-      }
+      font-size: 2rem;
       li {
-        text-align: start;
-        width: 90%;
-        display: flex;
+        padding-left: 0;
+        text-align: center;
+        a {
+          text-shadow: 2px 2px 10px var(--blue-up1);
+        }
       }
-      a {
-        font-size: 1.5rem;
-        height: 3rem;
-      }
+    }
+    .section__footer_middle {
+      width: 100%;
     }
   }
 `;
 
 export default function Footer() {
   return (
-    <FooterStyles className="container">
-      <div className="sectionEstrutura remove">
-        <PText>
-          <FaReply />
-        </PText>
+    <FooterStyles>
+      <div className="section__footer">
         <ul className="section__pages">
           <li>
             <a href="#home">Inicio</a>
@@ -97,21 +125,29 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="sectionEstrutura sectionEstrutura2">
-        <PText>Portfolio desenvolvido por Leonardo Monti</PText>
+      <div className="section__footer_middle">
+        <p>
+          Portfolio desenvolvido por{' '}
+          <a
+            href="https://github.com/LeonardoMonti"
+            rel="noreferrer"
+            target="_blank"
+            className="link"
+          >
+            Leonardo Monti <FaGithub className="icon" />
+          </a>
+        </p>
       </div>
-      <div className="sectionEstrutura">
+      <div className="section__footer">
         <a
-          href={ExampleDoc}
+          // href={ExampleDoc} // adicionar curriculum
           download="MyExampleDoc"
           target="_blank"
           rel="noreferrer"
+          className="downloadCV"
         >
-          <Button
-            btnText="Download CV"
-            icon={<FaDownload className="icon" />}
-            btnLink=""
-          />
+          <FaDownload className="icon" />
+          Download CV
         </a>
       </div>
     </FooterStyles>

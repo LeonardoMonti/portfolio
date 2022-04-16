@@ -29,6 +29,12 @@ const AboutSectionStyle = styled.div`
     text-shadow: 2px 5px 10px var(--black-op);
   }
 
+  @media only screen and (max-width: 1024px) {
+    .about {
+      max-width: 970px;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     .about {
       max-width: 340px;

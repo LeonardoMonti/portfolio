@@ -108,11 +108,11 @@ const HeroStyles = styled.div`
 
   @media only screen and (max-width: 1440px) {
     .hero__social {
-      top: 70vh;
+      top: 68vh;
     }
     .hero__img {
       width: 260px;
-      height: 375px;
+      height: 420px;
     }
     .hero__info {
       padding-top: 3px;

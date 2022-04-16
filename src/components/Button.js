@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const ButtonStyle = styled.button`
-  margin-top: 2rem;
-  width: 300px;
-  background-color: var(--blue-up4);
-  border: 2px solid var(--blue-up2);
-  height: 70px;
-  border-radius: 8px;
+const ButtonStyle = styled.div`
   .button {
+    margin-top: 2rem;
+    width: 300px;
+    background-color: var(--blue-up4);
+    border: 2px solid var(--blue-up2);
+    height: 70px;
+    border-radius: 8px;
     align-items: center;
     font-size: 2rem;
     text-shadow: 1px 1px 2px black;
@@ -20,11 +20,6 @@ const ButtonStyle = styled.button`
   }
   .icon {
     width: 65%;
-  }
-  .button:hover {
-    font-size: 2.05rem;
-    color: var(--white);
-    border: 2px solid var(--blue-up4);
   }
   @media only screen and (max-width: 768px) {
     .button {

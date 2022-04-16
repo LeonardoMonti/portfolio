@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
   :root{
     --dark-bg: #262626;
     --deep-dark: #1E1E1E;
-    --white : rgb(235,235,240);
+    --white: rgb(235,235,240);
     --black: black;
     --black-op: rgba(9, 11, 13, 1);
     --black-op8: rgba(9, 11, 13, 0.9);
