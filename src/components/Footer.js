@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { FaDownload, FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { BiDownload } from 'react-icons/bi';
 // import ExampleDoc from '../assets/images/gifloading.gif';
+import useReactPath from '../utils/useReactPath';
 
 const FooterStyles = styled.footer`
   display: flex;
@@ -107,6 +109,10 @@ const FooterStyles = styled.footer`
 `;
 
 export default function Footer() {
+  const path = useReactPath();
+  useEffect(() => {
+    console.log(path);
+  }, [path]);
   return (
     <FooterStyles>
       <div className="section__footer">
@@ -146,7 +152,7 @@ export default function Footer() {
           rel="noreferrer"
           className="downloadCV"
         >
-          <FaDownload className="icon" />
+          <BiDownload className="icon" />
           Download CV
         </a>
       </div>

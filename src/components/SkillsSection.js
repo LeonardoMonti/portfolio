@@ -24,7 +24,7 @@ const SkillsSectionStyle = styled.div`
   }
 
   .swiper-container {
-    padding: 2rem;
+    padding: 1.8rem 1.8rem 0.7rem 1.8rem;
     width: 70%;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -48,9 +48,8 @@ const SkillsSectionStyle = styled.div`
 
   .nameSkill {
     text-align: center;
-    min-width: 150px;
-    font-size: 1.2rem;
-    padding-bottom: 1px;
+    min-width: 100px;
+    font-size: 1.3rem;
   }
   .swiper-button-prev,
   .swiper-button-next {
@@ -65,6 +64,12 @@ const SkillsSectionStyle = styled.div`
       img {
         width: 80px;
       }
+    }
+    .nameSkill {
+      text-align: center;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
     }
   }
 `;
@@ -84,7 +89,7 @@ export default function SkillsSection() {
           breakpoints={{
             // quando a largura da janela é >= 640px
             640: {
-              slidesPerView: 3,
+              slidesPerView: 2,
             },
             // quando a largura da janela é >= 768px
             768: {

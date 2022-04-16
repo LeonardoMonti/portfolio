@@ -10,31 +10,11 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 0.3rem 0;
-  background-image: linear-gradient(
-    to left,
-    #181a1d,
-    #181a1d,
-    #181a1d,
-    #181a1d,
-    #181a1d,
-    #171b21,
-    #151b25,
-    #131c29,
-    #0e1d32,
-    #091e3b,
-    #061e44,
-    #051e4c
-  );
-  border-bottom: 2px solid var(--blue-up1);
-
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  border-radius: 10px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--blue-up1);
 
   ul {
     max-width: 1200px;
@@ -76,33 +56,10 @@ const NavStyles = styled.nav`
   .navItems .closeNavIcon {
     display: none;
   }
-  .nav-handle {
-    transition-property: translateY;
-    transition-duration: 3s;
-    transform: translateY(calc(-1 * var(--nav-height)));
-    li {
-      a {
-        transition-property: padding, font-size;
-        transition-duration: 1s, 1.9s;
-        padding: 0;
-        font-size: 0;
-      }
-    }
-  }
-  .nav-handle2 {
-    li {
-      a {
-        transition-property: padding, font-size, opacity;
-        transition-duration: 1s, 1.9s;
-        padding: 1rem 2rem;
-        font-size: 2rem;
-        animation: fadein 2s;
-      }
-    }
-  }
 
   @media only screen and (max-width: 768px) {
     padding: 0;
+    position: fixed;
     .hide-item {
       transform: translateY(calc(-100% - var(--top)));
     }
@@ -148,21 +105,6 @@ const NavStyles = styled.nav`
 
 export default function NavMenu() {
   const [showNav, setShowNav] = useState(false);
-
-  let lastScrollY = window.scrollY;
-  function handleScroll() {
-    const navUl = document.querySelector('.navItems');
-    if (lastScrollY < window.scrollY) {
-      navUl.classList.add('nav-handle');
-      navUl.classList.remove('nav-handle2');
-    } else {
-      navUl.classList.add('nav-handle2');
-      navUl.classList.remove('nav-handle');
-    }
-    lastScrollY = window.scrollY;
-  }
-
-  window.addEventListener('scroll', handleScroll);
 
   return (
     <NavStyles>
