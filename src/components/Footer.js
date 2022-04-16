@@ -23,7 +23,7 @@ const FooterStyles = styled.footer`
   .section__pages {
     align-items: center;
     width: 100%;
-    font-size: 2.2rem;
+    font-size: 2rem;
     li {
       padding-left: 8vh;
       text-align: start;
