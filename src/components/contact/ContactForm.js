@@ -170,7 +170,7 @@ export default function ContactForm() {
         .max(150, 'Must be 150 characters or less')
         .required('Required'),
       user_email: Yup.string()
-        .email('Invalid user_email address')
+        .email('Invalid email address')
         .required('Required'),
     }),
     onSubmit: (values, { setSubmitting, resetForm }) => {
@@ -181,6 +181,9 @@ export default function ContactForm() {
       setTimeout(() => {
         resetForm();
         setSubmitting(false);
+        setTimeout(() => {
+          setSent(false);
+        }, 2000);
       }, 1000);
     },
   });
