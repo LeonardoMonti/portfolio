@@ -12,18 +12,26 @@ SwiperCore.use([Navigation]);
 const ProjectSectionStyle = styled.div`
   padding: 3rem 0;
   min-height: 800px;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+  }
   .projects__allItems {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 5rem;
   }
   .swiper-container {
     padding-top: 7rem;
-    max-width: 100%;
+    width: 1200px;
   }
   .swiper-button-prev,
   .swiper-button-next {
@@ -53,16 +61,55 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-next::after {
     font-size: 2rem;
   }
+
+  @media only screen and (max-width: 1024px) {
+    .container {
+      width: 100%;
+    }
+    .swiper-container {
+      padding-top: 6rem;
+      width: 768px;
+    }
+    padding: 2rem 0;
+  }
+
   @media only screen and (max-width: 768px) {
-    padding: 9rem 0;
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+    }
+    .swiper-container {
+      padding-top: 6rem;
+      width: 310px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      height: 45px;
+      width: 45px;
+      justify-content: space-evenly;
+      background: var(--white);
+      text-shadow: 1px 2px 2px var(--black-op6);
+      z-index: 10;
+      align-items: center;
+
+      left: auto;
+      top: 0;
+      transform: translateY(50%);
+      color: var(--blue-up1);
+      border-radius: 8px;
+      :active {
+        transform: translateY(52%);
+        text-shadow: 1px 1px 2px var(--black-op6);
+      }
+    }
     .projects__allItems {
       flex-direction: column;
-      max-width: 400px;
-      margin: 0 auto;
-      margin-top: 0.15rem;
-      gap: 5rem;
+      margin-top: 0.2rem;
+      gap: 1rem;
+      width: 300px;
       .projectItem__img {
-        width: 100%;
+        width: 98%;
       }
     }
   }
@@ -75,7 +122,7 @@ export default function ProjectsSection() {
         <SectionTitle subheading="" heading="Projetos" />
         <div className="projects__allItems">
           <Swiper
-            spaceBetween={20}
+            spaceBetween={30}
             slidesPerView={1}
             navigation
             breakpoints={{

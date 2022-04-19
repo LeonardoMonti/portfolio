@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaArrowRight } from 'react-icons/fa';
-import { motion } from 'framer-motion/dist/framer-motion';
+// import { motion } from 'framer-motion/dist/framer-motion';
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -10,7 +10,7 @@ import LinkedinIcon from '../assets/images/linkedin-icon.png';
 import GithubIcon from '../assets/images/github-icon.png';
 import PText from './PText';
 
-const HeroStyles = styled(motion.div)`
+const HeroStyles = styled.div`
   .hero {
     min-height: 800px;
     height: 100vh;

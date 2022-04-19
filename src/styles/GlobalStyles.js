@@ -1,12 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-  :root{
+
+  :root {
     --dark-bg: #262626;
     --deep-dark: #1E1E1E;
     --white: rgb(235,235,240);
@@ -27,6 +28,7 @@ const GlobalStyles = createGlobalStyle`
 
     --nav-height: 50px;
   }
+
     /* Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
     width: 16px;
@@ -87,12 +89,6 @@ const GlobalStyles = createGlobalStyle`
     outline: none
   }
 
-  .container {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-  }
-
   [data-scrollbar] {
     height: 100vh;
     overflow: hidden;
@@ -108,4 +104,5 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 `;
+
 export default GlobalStyles;
