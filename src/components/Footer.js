@@ -14,7 +14,7 @@ const FooterStyles = styled.footer`
   border-radius: 8px 8px 0px 0px;
   border-bottom: none;
   justify-content: space-between;
-  margin-top: 100spx;
+  margin-top: 100px;
   .section__footer {
     display: flex;
     justify-content: center;

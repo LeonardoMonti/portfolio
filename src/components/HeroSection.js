@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaArrowRight } from 'react-icons/fa';
+import { motion } from 'framer-motion/dist/framer-motion';
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -9,7 +10,7 @@ import LinkedinIcon from '../assets/images/linkedin-icon.png';
 import GithubIcon from '../assets/images/github-icon.png';
 import PText from './PText';
 
-const HeroStyles = styled.div`
+const HeroStyles = styled(motion.div)`
   .hero {
     min-height: 800px;
     height: 100vh;
@@ -184,7 +185,11 @@ const HeroStyles = styled.div`
 
 export default function HeroSection() {
   return (
-    <HeroStyles>
+    <HeroStyles
+      initial={{ opacity: 0 }}
+      whileInView={{ x: [100, 40, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+    >
       <div id="home" className="hero">
         <div className="container">
           <h1 className="hero__heading">
