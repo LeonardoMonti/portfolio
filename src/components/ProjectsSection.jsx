@@ -140,18 +140,15 @@ export default function ProjectsSection() {
               },
             }}
           >
-            {projects.map((project, index) => {
-              if (index >= 5) return;
-              return (
-                <SwiperSlide key={project.id}>
-                  <ProjectItem
-                    title={project.name}
-                    img={project.img}
-                    desc={project.desc}
-                  />
-                </SwiperSlide>
-              );
-            })}
+            {projects.map((project) => (
+              <SwiperSlide key={project.id}>
+                <ProjectItem
+                  title={project.name}
+                  img={project.img}
+                  desc={project.desc}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

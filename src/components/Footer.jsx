@@ -137,41 +137,45 @@ export default function Footer() {
               <a href="#projects">Projetos</a>
             </li>
             <li>
-              <a>Contato</a>
+              <span>Contato</span>
             </li>
           </ul>
         ) : (
           <ul className="section__pages">
             <li>
-              <a>------</a>
+              <span>------</span>
             </li>
             <li>
-              <a>------</a>
+              <span>------</span>
             </li>
             <li>
-              <a>------</a>
+              <span>------</span>
             </li>
             <li>
-              <a>------</a>
+              <span>------</span>
             </li>
           </ul>
         )}
       </div>
       <div className="section__footer_middle">
         <p>
-          Portfolio desenvolvido por{' '}
+          Portfolio desenvolvido por
+          {' '}
           <a
             href="https://github.com/LeonardoMonti"
             rel="noreferrer"
             target="_blank"
             className="link"
           >
-            Leonardo Monti <FaGithub className="icon" />
+            Leonardo Monti
+            {' '}
+            <FaGithub className="icon" />
           </a>
         </p>
       </div>
       <div className="section__footer">
         <a
+          href="oi"
           // href={ExampleDoc} // adicionar curriculum
           download="MyExampleDoc"
           target="_blank"

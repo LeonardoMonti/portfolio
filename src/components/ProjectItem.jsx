@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -48,7 +49,7 @@ export default function ProjectItem({
         <img src={img} alt="project img" />
       </Link>
       <div className="projectItem__info">
-        <Link to="#">
+        <Link to="#ssss">
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
@@ -56,3 +57,9 @@ export default function ProjectItem({
     </ProjectItemStyles>
   );
 }
+
+ProjectItem.propTypes = {
+  desc: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};

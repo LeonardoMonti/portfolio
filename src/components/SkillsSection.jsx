@@ -101,8 +101,8 @@ export default function SkillsSection() {
             },
           }}
         >
-          {skills.map(({ name, img }, index) => (
-            <SwiperSlide key={index} className="containerSlide">
+          {skills.map(({ name, img }, i) => (
+            <SwiperSlide key={`${name}_${i + 1}`} className="containerSlide">
               <img className="imageSkill" src={img} alt="icon-skills" />
               <h1 className="nameSkill">{name}</h1>
             </SwiperSlide>

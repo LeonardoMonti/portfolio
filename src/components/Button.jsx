@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -39,9 +40,15 @@ export default function Button({
   return (
     <ButtonStyle className="button-wrapper">
       <Link className="button" to={btnLink}>
-        <a className="icon">{icon}</a>
+        <span className="icon">{icon}</span>
         {btnText}
       </Link>
     </ButtonStyle>
   );
 }
+
+Button.propTypes = {
+  btnLink: PropTypes.string.isRequired,
+  btnText: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+};
