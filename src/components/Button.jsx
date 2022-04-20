@@ -50,5 +50,9 @@ export default function Button({
 Button.propTypes = {
   btnLink: PropTypes.string.isRequired,
   btnText: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.element,
+};
+
+Button.defaultProps = {
+  icon: <span>a</span>,
 };
