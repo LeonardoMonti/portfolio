@@ -25,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
     --blue-up3: #2C5DF2;
     --blue-up4: rgba(17, 25, 40, 0.75);
     --black-2: #161B22;
+    --red-op: #B51010;
 
     --nav-height: 50px;
   }
