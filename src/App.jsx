@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -11,20 +11,12 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <NavMenu />
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/Projects">
-          <Projects />
-        </Route>
-        <Route path="/Contact">
-          <Contact />
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/About" element={<About />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Footer />
     </Router>
   );
