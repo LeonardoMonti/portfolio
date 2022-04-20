@@ -118,7 +118,7 @@ export default function ContactForm() {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.user_email}
-          placeholder="Seu email"
+          placeholder="Email"
         />
         <ErrorMessage>
           {formik.touched.user_email && formik.errors.user_email ? (
@@ -136,7 +136,7 @@ export default function ContactForm() {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.message}
-          placeholder="escreva uma menssage aqui..."
+          placeholder="Escreva uma mensagem aqui..."
         />
         <ErrorMessage>
           {formik.touched.message && formik.errors.message ? (
