@@ -109,22 +109,18 @@ export const ErrorMessage = styled.span`
   position: absolute;
   right: 10px;
   div {
-    color: var(--red-op);
-    font-size: 14px;
     svg {
-      width: 20px;
+      width: 25px;
       fill: var(--red-op);
     }
   }
 
-  @media only screen and (max-width: 1024px) {
-    svg {
-      width: 14px;
-      fill: var(--red-op);
+  @media only screen and (max-width: 768px) {
+    div {
+      svg {
+        width: 21px;
+      }
     }
-  }
-
-  @media only screen and (max-width: 768px) { 
-    right: 10px;
+    top: 3.5px;
   }
 `;
