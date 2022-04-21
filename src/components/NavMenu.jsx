@@ -127,7 +127,7 @@ export default function NavMenu() {
         </div>
         <li>
           <a
-            to="/"
+            href="#home"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}

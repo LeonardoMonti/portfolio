@@ -186,6 +186,7 @@ const HeroStyles = styled.div`
 export default function HeroSection() {
   return (
     <HeroStyles
+      id="home"
       initial={{ opacity: 0 }}
       whileInView={{ y: [100, 40, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}

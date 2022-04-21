@@ -6,7 +6,7 @@ import { Container } from './style';
 
 export default function ContactSection() {
   return (
-    <Container>
+    <Container id="contact">
       <SectionTitle heading="Contato" />
       <div>
         <ContactInfo />
