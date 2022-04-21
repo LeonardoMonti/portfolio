@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ButtonStyle = styled.div`
@@ -39,10 +38,10 @@ export default function Button({
 }) {
   return (
     <ButtonStyle className="button-wrapper">
-      <Link className="button" to={btnLink}>
+      <a className="button" href={btnLink}>
         <span className="icon">{icon}</span>
         {btnText}
-      </Link>
+      </a>
     </ButtonStyle>
   );
 }

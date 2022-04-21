@@ -187,7 +187,7 @@ export default function HeroSection() {
   return (
     <HeroStyles
       initial={{ opacity: 0 }}
-      whileInView={{ x: [100, 40, 0], opacity: [0, 0, 1] }}
+      whileInView={{ y: [100, 40, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
     >
       <div id="home" className="hero">
@@ -204,7 +204,7 @@ export default function HeroSection() {
             <Button
               btnText="Veja meus projetos"
               icon={<FaArrowRight className="icon" />}
-              btnLink="/projects"
+              btnLink="#projects"
             />
           </div>
           <div className="hero__social">

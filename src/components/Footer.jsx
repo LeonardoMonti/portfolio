@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { FaGithub } from 'react-icons/fa';
 import { BiDownload } from 'react-icons/bi';
-import { useLocation } from 'react-router-dom';
-// import ExampleDoc from '../assets/images/gifloading.gif';
+import ExampleDoc from '../assets/images/gifloading.gif';
 
 const FooterStyles = styled.footer`
   display: flex;
@@ -109,53 +108,23 @@ const FooterStyles = styled.footer`
 `;
 
 export default function Footer() {
-  const [render, setRender] = useState(false);
-
-  const location = useLocation();
-  const { pathname } = location;
-
-  useEffect(() => {
-    if (pathname === '/') {
-      setRender(true);
-    } else {
-      setRender(false);
-    }
-  }, [pathname, render]);
-
   return (
     <FooterStyles>
       <div className="section__footer">
-        {render ? (
-          <ul className="section__pages">
-            <li>
-              <a href="#home">Inicio</a>
-            </li>
-            <li>
-              <a href="#about">Sobre</a>
-            </li>
-            <li>
-              <a href="#projects">Projetos</a>
-            </li>
-            <li>
-              <span>Contato</span>
-            </li>
-          </ul>
-        ) : (
-          <ul className="section__pages">
-            <li>
-              <span>------</span>
-            </li>
-            <li>
-              <span>------</span>
-            </li>
-            <li>
-              <span>------</span>
-            </li>
-            <li>
-              <span>------</span>
-            </li>
-          </ul>
-        )}
+        <ul className="section__pages">
+          <li>
+            <a href="#home">Inicio</a>
+          </li>
+          <li>
+            <a href="#about">Sobre</a>
+          </li>
+          <li>
+            <a href="#projects">Projetos</a>
+          </li>
+          <li>
+            <span>Contato</span>
+          </li>
+        </ul>
       </div>
       <div className="section__footer_middle">
         <p>
@@ -175,8 +144,7 @@ export default function Footer() {
       </div>
       <div className="section__footer">
         <a
-          href="oi"
-          // href={ExampleDoc} // adicionar curriculum
+          href={ExampleDoc} // adicionar curriculum
           download="MyExampleDoc"
           target="_blank"
           rel="noreferrer"

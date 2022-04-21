@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
@@ -127,7 +126,7 @@ export default function NavMenu() {
           <MdClose />
         </div>
         <li>
-          <NavLink
+          <a
             to="/"
             onClick={() => setShowNav(!showNav)}
             role="button"
@@ -135,40 +134,40 @@ export default function NavMenu() {
             tabIndex={0}
           >
             Inicio
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink
-            to="/about"
+          <a
+            href="#about"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             Sobre
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink
-            to="/projects"
+          <a
+            href="#projects"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             Projetos
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink
-            to="/contact"
+          <a
+            href="#contact"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             Contato
-          </NavLink>
+          </a>
         </li>
       </ul>
     </NavStyles>

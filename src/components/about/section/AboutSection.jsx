@@ -1,7 +1,7 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react/swiper-react';
 import { Autoplay, Navigation } from 'swiper';
-import data from '../../../../assets/data/skills';
+import data from '../../../assets/data/skills';
 import { Container, SkillsEl } from './style';
 
 export default function ProjectsSection() {

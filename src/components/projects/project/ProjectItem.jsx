@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Container, ProjectInfo } from './style';
 
 export default function ProjectItem({
@@ -14,9 +13,9 @@ export default function ProjectItem({
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
     >
-      <Link to="/projects">
+      <a href="#projects">
         <img src={img} alt="project img" />
-      </Link>
+      </a>
       <ProjectInfo
         initial={{ opacity: 0 }}
         whileInView={{ x: [100, 50, 0], opacity: [0, 0, 1] }}
