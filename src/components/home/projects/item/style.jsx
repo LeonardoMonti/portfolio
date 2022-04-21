@@ -15,13 +15,8 @@ export const Container = styled(motion.section)`
     display: inline-block;
     border: 2px solid var(--blue-up2);
 
-    @media only screen and (max-width: 1024px) {
-      height: 380px;
-    }
-
     @media only screen and (max-width: 768px) {
       width: 100%;
-      height: 335px;
     }
 
     img {

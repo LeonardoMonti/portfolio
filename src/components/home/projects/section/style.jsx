@@ -7,16 +7,21 @@ const Container = styled.section`
   align-items: center;
 
   h1 {
+    font-family: 'Montserrat Bold';
+    letter-spacing: 5px;
+    text-shadow: 1px 2px 5px var(--black-op);
     padding-top: 50px;
     font-size: 7rem;
     text-transform: uppercase;
 
     @media only screen and (max-width: 1024px) {
+      letter-spacing: 5px;
       padding-top: 45px;
       font-size: 5.7rem;
     }
 
     @media only screen and (max-width: 768px) {
+      letter-spacing: 5px;
       padding-top: 37px;
       padding-bottom: 10px;
       font-size: 4.6rem;
@@ -28,6 +33,7 @@ const Container = styled.section`
 
     .swiper {
       padding-top: 60px;
+
     }
 
     .swiper-button-prev,
@@ -66,17 +72,14 @@ const Container = styled.section`
 
     @media only screen and (max-width: 768px) {
       width: 100%;
+      
       .swiper {
-        padding-top: 50px;
+        padding-top: 20px;
       }
+
       .swiper-button-prev,
       .swiper-button-next {
-        height: 45px;
-        width: 45px;
-        right: 65px;
-      }
-      .swiper-button-next {
-        right: 10px;
+        display: none;
       }
     }
   }
