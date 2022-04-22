@@ -1,5 +1,4 @@
 import React from 'react';
-import SectionTitle from '../../SectionTitle';
 import ContactForm from '../form/ContactForm';
 import ContactInfo from '../info/ContactInfo';
 import { Container } from './style';
@@ -7,7 +6,7 @@ import { Container } from './style';
 export default function ContactSection() {
   return (
     <Container id="contact">
-      <SectionTitle heading="Contato" />
+      <h1>Contato</h1>
       <div>
         <ContactInfo />
         <ContactForm />

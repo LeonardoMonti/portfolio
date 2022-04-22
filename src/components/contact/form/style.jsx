@@ -10,11 +10,11 @@ export const Container = styled.form`
   background-color: var(--blue-up4);
   border-radius: 10px;
   border: 1px solid var(--gray-5);
-  padding: 2rem;
-  width: 500px;
-  height: 500px;
+  padding: 1rem;
+  width: 450px;
+  margin-top: 75px;
+  height: 400px;
   display: flex;
-  gap: 10px;
 
   @media only screen and (max-width: 1024px) {
     height: 400px;
@@ -22,6 +22,7 @@ export const Container = styled.form`
   }
 
   @media only screen and (max-width: 768px) {
+    margin-top: 5px;
     width: 350px;
     height: 440px;
     gap: 0rem;
@@ -50,7 +51,8 @@ export const Container = styled.form`
       border-radius: 5px;
       border: none;
       padding: 10px;
-      font-size: 18px;
+      color: var(--black-op);
+      font-size: 19px;
 
       &:focus {
         box-shadow: inset 1px 0px 2px 2px var(--blue-up3);
@@ -62,9 +64,8 @@ export const Container = styled.form`
       }
 
       @media only screen and (max-width: 768px) {
-        height: 37px;
-        padding: 7px;
-        font-size: 17px;
+        height: 45px;
+        font-size: 21px;
       }
     }
     
@@ -72,7 +73,7 @@ export const Container = styled.form`
       box-shadow: inset 1px 0px 2px 2px var(--black-op8);
       -webkit-box-shadow: inset 1px 0px 2px 2px var(--black-op8);
       width: 100%;
-      color: var(--black-op8);
+      color: var(--black-op);
       resize: none;
       border-radius: 5px;
       font-size: 1.8rem;
@@ -84,7 +85,7 @@ export const Container = styled.form`
       }
 
       @media only screen and (max-width: 1024px) {
-        font-size: 17px;
+        font-size: 21px;
       }
     }
   }

@@ -13,7 +13,8 @@ const FooterStyles = styled.footer`
   border-radius: 8px 8px 0px 0px;
   border-bottom: none;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 140px;
+
   .section__footer {
     display: flex;
     justify-content: center;
@@ -122,7 +123,7 @@ export default function Footer() {
             <a href="#projects">Projetos</a>
           </li>
           <li>
-            <span>Contato</span>
+            <span href="#contact">Contato</span>
           </li>
         </ul>
       </div>

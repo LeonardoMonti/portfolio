@@ -3,8 +3,19 @@ import styled from 'styled-components';
 const Container = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  max-height: 900px;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 10px;
+    max-height: 768px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 0px;
+    max-height: 700px;
+  }
 
   h1 {
     font-family: 'Montserrat Bold';

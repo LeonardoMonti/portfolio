@@ -7,15 +7,19 @@ import 'swiper/swiper.min.css';
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  text-align: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 830px;
+  max-height: 890px;
+  margin-bottom: 80px;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 10px;
+    max-height: 768px;
+  }
 
   @media only screen and (max-width: 768px) {
-    padding: 10px;
-    height: 850px;
+    padding: 5px;
+    margin-bottom: 30px;
   }
 
   h1 {
@@ -67,7 +71,7 @@ export const Container = styled.section`
       font-size: 2.1rem;
 
       @media only screen and (max-width: 768px) {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
     }
   }
@@ -112,6 +116,7 @@ export const SkillsEl = styled(Swiper)`
     }
 
     p {
+      text-align: center;
       font-size: 1.4rem;
 
       @media only screen and (max-width: 1024px) {

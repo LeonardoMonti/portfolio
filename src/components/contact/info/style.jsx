@@ -3,18 +3,18 @@ import styled from 'styled-components';
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  width: 500px;
-  height: 500px;
-  gap: 3.3rem;
-  justify-content: space-evenly;
+  width: 450px;
+  margin-top: 75px;
+  height: 400px;
+  justify-content: space-between;
 
   @media only screen and (max-width: 1024px) {
+    margin-top: 20px;
     width: 400px;
-    padding: 1rem;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
-    height: 190px;
+    height: 150px;
     justify-content: center;
   }
 
@@ -38,7 +38,7 @@ export const Container = styled.section`
     border: 1px solid var(--gray-5);
     gap: 1.5rem;
     font-size: 1.5rem;
-    padding: 1.3rem;
+    padding: 1rem;
 
     @media only screen and (max-width: 1024px) {
       flex-direction: column;

@@ -1,21 +1,43 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-    min-height: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 120px;
-    flex-direction: column;
-    height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 900px;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 10px;
+    max-height: 768px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 0px;
+    max-height: 667px;
+  }
+
+  h1 {
+    font-family: 'Montserrat Bold';
+    letter-spacing: 5px;
+    text-shadow: 1px 2px 5px var(--black-op);
+    padding-top: 50px;
+    font-size: 7rem;
+    text-transform: uppercase;
 
     @media only screen and (max-width: 1024px) {
-      margin-top: 75px;
+      letter-spacing: 5px;
+      padding-top: 45px;
+      font-size: 5.7rem;
     }
 
     @media only screen and (max-width: 768px) {
-      margin-top: 50px;
+      letter-spacing: 5px;
+      padding-top: 37px;
+      padding-bottom: 10px;
+      font-size: 4.6rem;
     }
+  }
 
   div {
     display: flex;
