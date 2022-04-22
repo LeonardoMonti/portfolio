@@ -4,34 +4,6 @@ import {
 } from 'react-icons/fa';
 import { Container, Icon } from './style';
 
-// const FormStyles = styled.div`
-//   .infoContain {
-//     width: 500px;
-//     height: 500px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     gap: 3.5rem;
-//   }
-
-//   @media only screen and (max-width: 1024px) {
-//     .infoContain {
-//       width: 400px;
-//       height: 400px;
-//     }
-//   }
-//   @media only screen and (max-width: 768px) {
-//     .infoContain {
-//       width: 300px;
-//       flex-direction: row;
-//       min-height: 10px;
-//       height: 50px;
-//       justify-content: center;
-//       gap: 0.6rem;
-//     }
-//   }
-// `;
-
 export default function ContactForm() {
   return (
     <Container>
